@@ -82,3 +82,49 @@
     }
   }
 }
+
+.top-content2{
+  max-width: 900px;
+  height: 300px;
+  margin: 50px auto 0 auto;
+  font-size: 80px;
+  text-align: center;
+
+  .signup-box{
+    width: 600px;
+    height: 100px;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+
+    .signup-font{
+      font-size: 50px;
+      color: black;
+      margin-left: 100px;
+      padding-top: 20px;
+      box-sizing: border-box;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .signup-btn{
+      width: 100px;
+      height: 100px;
+      background-color: rgba(13, 26, 204, 0.911);
+      border-radius: 50%;
+      margin-left: 30px;
+      transition: 0.7s;
+
+      .btn-triangle{
+        width: 0;
+        height: 0;
+        margin: 20px 0 0 40px;
+        border-width: 30px;
+        border-style: solid;
+        border-color: transparent transparent transparent white;
+        }
+    }
+
+    .signup-btn:hover{
+        background-color: rgba(214, 27, 27, 0.911);
+    }
+  }
+}
