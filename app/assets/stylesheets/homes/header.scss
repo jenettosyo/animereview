@@ -1,8 +1,7 @@
 .header{
   width: 100vw;
   height: 100px;
-  padding: 20px 50px;
-  background-color: red;
+  padding: 20px 150px;
   box-sizing: border-box;
 
   &__left{
@@ -10,22 +9,33 @@
     font-size: 24px;
     color: #ecf0f1;
     line-height: 60px;
+    transition: 1s;
     animation: text-shadow-pop-top 0.6s both;
   }
 
   &__right{
-    display: inline-block;
     font-size: 24px;
     color: #ecf0f1;
     float: right;
+    display: flex;
+
+    &__triangle{
+      width: 0;
+      height: 0;
+      margin-top: 20px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent white;
+    }
+    
 
     .header-list{
       float: left;
       list-style: none;
-      margin-right: 20px;
       line-height: 50px;
       transition: 1s;
-      animation: text-shadow-pop-top 0.6s both;
+      margin: 4px 20px 0 0;
+      animation: text-shadow-pop-top 0.6s both, move 1s infinite;
     }
     
     @keyframes text-shadow-pop-top {
@@ -38,5 +48,19 @@
         transform: translateY(1px);
       }
     }
+
+    @keyframes move{
+      0%{
+        transform: translateY(0);
+      }
+      100%{
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .top-hover:hover{
+    border-bottom: solid 1px white;
+    animation-play-state: paused;
   }
 }
