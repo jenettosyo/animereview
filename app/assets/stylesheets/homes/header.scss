@@ -39,6 +39,25 @@
       margin: 4px 20px 0 0;
       animation: text-shadow-pop-top 0.6s both, move 1s infinite;
     }
+
+    .hesder-userimage{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 5px 0 0;
+      background-image: url("top2.jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header-username{
+      float: left;
+      text-decoration: none;
+      list-style: none;
+      color: white;
+      line-height: 50px;
+      animation: text-shadow-pop-top 0.6s both;
+    }
     
     @keyframes text-shadow-pop-top {
       0% {
@@ -62,7 +81,10 @@
   }
 
   .top-hover:hover{
-    border-bottom: solid 1px white;
+    // border-bottom: solid 1px white;
+    display: block;
+    background-color: red;
+    border-radius: 5px;
     animation-play-state: paused;
   }
 }

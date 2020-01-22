@@ -7,6 +7,9 @@
       = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
       .header__right__triangle
       .header-list.top-hover list
+      .hesder-userimage
+      .header-username
+        = current_user.name
     -else
       = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
       .header__right__triangle
