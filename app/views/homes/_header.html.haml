@@ -2,9 +2,14 @@
   .header__left
     Anitwe
   .header__right
-    .header__right__triangle
-    .header-list.top-hover sign_up
-    .header__right__triangle
-    .header-list.top-hover login
-    .header__right__triangle
-    .header-list.top-hover list
+    - if user_signed_in?
+      .header__right__triangle
+      = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
+      .header__right__triangle
+      .header-list.top-hover list
+    -else
+      = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
+      .header__right__triangle
+      = link_to "login", new_user_session_path, class: "header-list top-hover"
+      .header__right__triangle
+      .header-list.top-hover list

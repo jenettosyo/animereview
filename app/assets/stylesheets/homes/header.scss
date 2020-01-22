@@ -15,9 +15,9 @@
 
   &__right{
     font-size: 24px;
-    color: #ecf0f1;
     float: right;
     display: flex;
+    
 
     &__triangle{
       width: 0;
@@ -31,7 +31,9 @@
 
     .header-list{
       float: left;
+      text-decoration: none;
       list-style: none;
+      color: white;
       line-height: 50px;
       transition: 1s;
       margin: 4px 20px 0 0;
