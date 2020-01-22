@@ -8,7 +8,7 @@
       .header__right__triangle
       .header-list.top-hover list
       .hesder-userimage
-      = link_to current_user.name, user_path(current_user.id), class: "header-username"
+      = link_to current_user.name, edit_user_path(current_user.id), class: "header-username"
     -else
       = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
       .header__right__triangle
