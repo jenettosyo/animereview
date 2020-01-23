@@ -1,0 +1,8 @@
+.edit-wrpper
+  .edit-header
+    編集ページ
+  .edit-formbox
+    = form_with model:@user, local: true do |f|
+      %p.edittext name
+      = f.text_field :name, autocomplete: "name", placeholder: "name", class: "editfield"
+      = f.submit "編集", class: "editbtn"
