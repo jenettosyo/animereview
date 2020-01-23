@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root to: "homes#top"
   resources :users, only: [:show, :edit, :update]
   resources :tweets, only: [:new]
+
 end
