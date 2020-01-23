@@ -11,6 +11,11 @@
     line-height: 60px;
     transition: 1s;
     animation: text-shadow-pop-top 0.6s both;
+
+    .top{
+      text-decoration: none;
+      color: #ecf0f1;
+    }
   }
 
   &__right{

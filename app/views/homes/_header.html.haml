@@ -1,13 +1,13 @@
 .header
   .header__left
-    Anitwe
+    = link_to "Anitwe", root_path, class: "top"
   .header__right
     - if user_signed_in?
       .header__right__triangle
       = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
       .header__right__triangle
       .header-list.top-hover list
-      .hesder-userimage
+      = image_tag @user.image.url, class: "hesder-userimage" 
       = link_to current_user.name, user_path(current_user.id), class: "header-username"
     -else
       = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
