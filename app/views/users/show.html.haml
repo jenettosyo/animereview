@@ -1,6 +1,7 @@
 .show-wrpper
   .show-header
     .show-userimage
+      = image_tag @user.image.url, class: "image"
     .show-username
       = current_user.name
       .edit-btn

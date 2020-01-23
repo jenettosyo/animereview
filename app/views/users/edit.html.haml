@@ -5,4 +5,6 @@
     = form_with model:@user, local: true do |f|
       %p.edittext name
       = f.text_field :name, autocomplete: "name", placeholder: "name", class: "editfield"
+      %p.edittext プロフィール画像
+      = f.file_field :image, type: 'file', autocomplete: "image_name"
       = f.submit "編集", class: "editbtn"
