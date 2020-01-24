@@ -1,0 +1,47 @@
+.tweets-wrpper{
+  width: 100vw;
+  // height: 1450px;
+  background: linear-gradient(50deg, rgba(251,102,63,0.9766281512605042) 4%, rgba(28,108,221,0.9402135854341737) 81%);
+
+  .tweets-header{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New';
+    color: white;
+  }
+
+  .tweets-formbox{
+    width: 800px;
+    height: 810px;
+    // height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+
+    .tweets-text{
+      font-size: 24px;
+      height: 50px;
+      padding: 20px 0 20px 20px;
+    }
+
+    .tweets-area{
+      height: 500px;
+      width: 600px;
+      margin: 0 100px 0 100px;
+      border-radius: 5px;
+      font-size: 25px;
+    }
+
+    .tweets-btn{
+      display: block;
+      width: 200px;
+      height: 60px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background: radial-gradient(rgb(11, 68, 224), rgba(0, 38, 255, 0.849), rgb(13, 141, 226));
+    }
+  }
+}
