@@ -9,7 +9,7 @@
       = link_to "list", tweets_path, class: "header-list top-hover"
       .header__right__triangle
       = link_to "投稿", new_tweet_path, class: "header-list top-hover"
-      = image_tag @user.image.url, class: "hesder-userimage" 
+      = image_tag current_user.image.url, class: "hesder-userimage" 
       = link_to current_user.name, user_path(current_user.id), class: "header-username"
     -else
       = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"

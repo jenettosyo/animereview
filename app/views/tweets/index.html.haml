@@ -1,0 +1,12 @@
+.index-wrpper
+  = render "homes/header"
+  .index-contentbox
+    - @tweets.each do|tweet|
+      .index-contentwrpper
+        .index-contentheader
+          = image_tag tweet.user.image.url, class: "hesder-userimage"
+          .header-username
+            = tweet.user.name
+        = image_tag tweet.picture.url, class: "index-contentimage"
+        .index-contenttext
+          = tweet.text
