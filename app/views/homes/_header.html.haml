@@ -12,8 +12,7 @@
       = image_tag current_user.image.url, class: "hesder-userimage" 
       = link_to current_user.name, user_path(current_user.id), class: "header-username"
     -else
+      .header__right__triangle
       = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
       .header__right__triangle
       = link_to "login", new_user_session_path, class: "header-list top-hover"
-      .header__right__triangle
-      .header-list.top-hover list

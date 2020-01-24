@@ -44,6 +44,7 @@
   margin: 400px auto 0 auto;
   font-size: 80px;
   opacity: 0;
+  text-align: center;
   transform: translateY(100px);
   transition: 2s;
 
@@ -118,12 +119,13 @@
       background-color: rgba(13, 26, 204, 0.911);
       border-radius: 50%;
       margin-left: 30px;
-      transition: 0.3s;
+      transition: 0.7s;
+      box-sizing: border-box;
+      padding: 20px 0 0 40px;
 
       .btn-triangle{
         width: 0;
         height: 0;
-        margin: 20px 0 0 40px;
         border-width: 30px;
         border-style: solid;
         border-color: transparent transparent transparent white;
