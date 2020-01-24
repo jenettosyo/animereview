@@ -1,5 +1,9 @@
 class TweetsController < ApplicationController
 
+  def index
+  end
+
+  
   def new
     @tweet = Tweet.new
     @user = User.find(current_user.id)
