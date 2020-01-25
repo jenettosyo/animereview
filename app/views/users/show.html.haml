@@ -13,6 +13,8 @@
           = image_tag tweet.user.image.url, class: "hesder-userimage"
           .header-username
             = tweet.user.name
+          .content-show
+            = link_to "削除", tweet_path(tweet.id), method: :delete
         = image_tag tweet.picture.url, class: "index-contentimage"
         .index-contenttext
           = tweet.text

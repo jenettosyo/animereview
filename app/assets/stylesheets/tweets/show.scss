@@ -1,0 +1,38 @@
+.tweetshow-box{
+  width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: solid 1px gray;
+  padding-top: 20px;
+
+  .tweetshow-header{
+    width: 100%;
+    display: flex;
+
+    .tweetshow-userimage{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 20px 0 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tweetshow-username{
+      font-size: 50px;
+      color: gray;
+      text-align: center;
+    }
+  }
+
+  .tweetshow-contentimage{
+    width: 100%;
+    margin: 20px 0 40px 0;
+  }
+
+  .tweetshow-contenttext{
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+}
