@@ -14,13 +14,19 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(tweet_params)
     if @tweet.save(tweet_params)
-      redirect_to (root_path)
+      redirect_to (tweets_path)
     else
       render action: "new"
     end
   end
 
   def show
+    @tweet = Tweet.find_by(id: params[:id])
+  end
+
+  def destroy
+    tweet = Tweet.find_by(id: params[:id])
+    tweet.destroy
   end
 
   private
