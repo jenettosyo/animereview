@@ -1,13 +1,7 @@
-.show-wrpper
+.index-wrpper
   = render "homes/header"
-  .show-header
-    .show-userimage
-      = image_tag @user.image.url, class: "image"
-    .show-username
-      = current_user.name
-      = link_to "編集", edit_user_path(current_user.id), class: "edit"
   .index-contentbox
-    - @user_tweets_view.each do|tweet|
+    - @tweets.each do|tweet|
       .index-contentwrpper
         .index-contentheader
           = image_tag tweet.user.image.url, class: "hesder-userimage"

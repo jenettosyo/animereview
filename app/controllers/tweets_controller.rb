@@ -1,5 +1,11 @@
 class TweetsController < ApplicationController
 
+  def index
+    @user = User.find(current_user.id)
+    @tweets = Tweet.all.order("created_at DESC")
+  end
+
+  
   def new
     @tweet = Tweet.new
     @user = User.find(current_user.id)
@@ -12,6 +18,9 @@ class TweetsController < ApplicationController
     else
       render action: "new"
     end
+  end
+
+  def show
   end
 
   private

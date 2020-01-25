@@ -2,11 +2,13 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(current_user.id)
+    @user_id = @user.id
+    @user_tweets = Tweet.where(user_id: "#{@user_id}")
+    @user_tweets_view = @user_tweets.all.order("created_at DESC")
   end
 
   def edit
     @user = User.find_by(id: params[:id])
-
   end
 
   def update

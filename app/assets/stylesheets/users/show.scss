@@ -1,10 +1,9 @@
 .show-wrpper{
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
-  animation-name: bcg;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  // background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
+  // animation-name: bcg;
+  // animation-duration: 10s;
+  // animation-iteration-count: infinite;
 
 
   @keyframes bcg{
@@ -28,14 +27,14 @@
     }
   }
 
+
+
   .show-header{
     height: 350px;
     width: 100vw;
     padding-top: 40px;
     box-sizing: border-box;
   
-
-
     .image{
       width: 250px;
       height: 250px;
@@ -48,16 +47,67 @@
 
     .show-username{
       font-size: 50px;
-      color: white;
+      color: gray;
       text-align: center;
+      // display: flex;
 
       .edit{
         font-size: 30px;
         text-decoration: none;
-        color: white;
+        color: gray;
+        margin: 0 0 0 20px;
       }
       .edit:hover{
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px gray;
+      }
+    }
+  }
+
+  .index-contentbox{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: solid 1px gray;
+
+    .index-contentwrpper{
+      width: 100%;
+      border-bottom: solid 1px gray;
+
+      .index-contentheader{
+        display: flex;
+        height: 60px;
+        padding: 20px;
+
+        .hesder-userimage{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin: 0 5px 0 0;
+          background-size: cover;
+          background-position: center;
+        }
+    
+        .header-username{
+          float: left;
+          text-decoration: none;
+          list-style: none;
+          font-size: 30px;
+          color: black;
+          line-height: 60px;
+          margin: 0 0 0 10px;
+        }
+      }
+
+      .index-contentimage{
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .index-contenttext{
+        padding: 20px 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       }
     }
   }
