@@ -1,0 +1,9 @@
+= render "homes/header"
+.tweetshow-box
+  .tweetshow-header
+    = image_tag @tweet.user.image.url, class: "tweetshow-userimage"
+    .tweetshow-username
+      = @tweet.user.name
+  = image_tag @tweet.picture.url, class: "tweetshow-contentimage"
+  .tweetshow-contenttext
+    = @tweet.text

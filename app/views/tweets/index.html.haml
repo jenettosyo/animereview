@@ -7,6 +7,7 @@
           = image_tag tweet.user.image.url, class: "hesder-userimage"
           .header-username
             = tweet.user.name
+          = link_to "詳細", tweet_path(tweet.id), class: "show-btn"
         = image_tag tweet.picture.url, class: "index-contentimage"
         .index-contenttext
           = tweet.text

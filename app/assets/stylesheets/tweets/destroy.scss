@@ -1,0 +1,32 @@
+.destroy-wrpper{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(-90deg, rgba(108,235,241,1) 0%, rgba(104,212,118,1) 100%);
+
+  .destroy-box{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    .destroy-text{
+      text-align: center;
+      font-size: 30px;
+      color: white;
+    }
+
+    .return-btn{
+      background-color: rgb(64, 142, 214);
+      width: 300px;
+      text-align: center;
+      border-radius: 10px;
+      padding: 10px 10px;
+      margin: 20px auto 0 auto;
+
+      .return-text{
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
