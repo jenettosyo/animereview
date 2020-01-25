@@ -73,7 +73,7 @@
       border: solid 1px gray;
 
       .index-contentheader{
-        display: flex;
+        // display: flex;
         height: 60px;
         padding: 20px;
 
@@ -84,6 +84,7 @@
           margin: 0 5px 0 0;
           background-size: cover;
           background-position: center;
+          float: left;
         }
     
         .header-username{
@@ -94,6 +95,17 @@
           color: black;
           line-height: 60px;
           margin: 0 0 0 10px;
+        }
+
+        .destroy-btn{
+          float: right;
+          text-decoration: none;
+          color: gray;
+          font-size: 20px;
+        }
+
+        .destroy-btn:hover{
+          border-bottom: solid 1px gray;
         }
       }
 
