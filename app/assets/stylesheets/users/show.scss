@@ -1,9 +1,9 @@
 .show-wrpper{
   width: 100vw;
-  background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
-  animation-name: bcg;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  // background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
+  // animation-name: bcg;
+  // animation-duration: 10s;
+  // animation-iteration-count: infinite;
 
 
   @keyframes bcg{
@@ -27,14 +27,14 @@
     }
   }
 
+
+
   .show-header{
     height: 350px;
     width: 100vw;
     padding-top: 40px;
     box-sizing: border-box;
   
-
-
     .image{
       width: 250px;
       height: 250px;
@@ -47,18 +47,18 @@
 
     .show-username{
       font-size: 50px;
-      color: white;
+      color: gray;
       text-align: center;
       // display: flex;
 
       .edit{
         font-size: 30px;
         text-decoration: none;
-        color: white;
+        color: gray;
         margin: 0 0 0 20px;
       }
       .edit:hover{
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px gray;
       }
     }
   }
@@ -67,6 +67,7 @@
     width: 800px;
     margin: 0 auto;
     background-color: #fff;
+    border: solid 1px gray;
 
     .index-contentwrpper{
       width: 100%;
@@ -82,7 +83,6 @@
           height: 60px;
           border-radius: 50%;
           margin: 0 5px 0 0;
-          background-image: url("top2.jpeg");
           background-size: cover;
           background-position: center;
         }
