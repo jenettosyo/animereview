@@ -7,4 +7,5 @@ class User < ApplicationRecord
 
          mount_uploader :image, ImageUploader
          has_many :tweets
+         has_many :comments
 end

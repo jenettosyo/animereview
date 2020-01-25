@@ -22,6 +22,7 @@ class TweetsController < ApplicationController
 
   def show
     @tweet = Tweet.find_by(id: params[:id])
+    @comment = Comment.new
   end
 
   def destroy

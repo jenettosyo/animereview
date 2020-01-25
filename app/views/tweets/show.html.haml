@@ -7,3 +7,7 @@
   = image_tag @tweet.picture.url, class: "tweetshow-contentimage"
   .tweetshow-contenttext
     = @tweet.text
+.comment-formbox
+  = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
+    = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
+    -# = f.submit "送信", class: "comment-btn"
