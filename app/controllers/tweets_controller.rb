@@ -3,6 +3,7 @@ class TweetsController < ApplicationController
   def index
     @user = User.find(current_user.id)
     @tweets = Tweet.all.order("created_at DESC")
+    # binding.pry
   end
 
   

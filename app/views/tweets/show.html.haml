@@ -7,6 +7,11 @@
   = image_tag @tweet.picture.url, class: "tweetshow-contentimage"
   .tweetshow-contenttext
     = @tweet.text
+  - if Like.find_by(user_id: current_user.id, tweet_id: @tweet_id)
+    = link_to "いいね済み", tweet_like_path(@tweet_id), method: :delete
+  - else
+    = link_to "いいね", tweet_likes_path(@tweet_id), method: :post
+
 .comment-formbox
   = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
     = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
