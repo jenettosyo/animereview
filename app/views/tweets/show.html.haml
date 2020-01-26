@@ -21,6 +21,9 @@
   .comment-formbox
     = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
       = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
+      - if @comment.errors[:comment].any?
+        .error-message-tweet-text
+          文字を入力してください
       = f.submit "送信", class: "comment-btn"
   .comment-listcontainer
     - @comments.each do|comment|
