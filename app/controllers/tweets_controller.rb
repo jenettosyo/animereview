@@ -26,6 +26,7 @@ class TweetsController < ApplicationController
     @tweet_id = @tweet.id
     @comments_tweet = Comment.where(tweet_id: "#{@tweet_id}")
     @comments = @comments_tweet.all.order("created_at DESC")
+    @like_count = Like.where(tweet_id: @tweet.id).count
   end
 
   def destroy

@@ -1,107 +1,138 @@
-.tweetshow-box{
-  width: 800px;
-  margin: 30px auto;
-  background-color: #fff;
-  border: solid 1px gray;
-  padding-top: 20px;
-
-  .tweetshow-header{
-    width: 100%;
-    display: flex;
-
-    .tweetshow-userimage{
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      margin: 0 20px 0 20px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .tweetshow-username{
-      font-size: 50px;
-      color: gray;
-      text-align: center;
-    }
-  }
-
-  .tweetshow-contentimage{
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px 0 40px 0;
-  }
-
-  .tweetshow-contenttext{
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 20px;
-    font-size: 24px;
-  }
-}
-
-.comment-formbox{
-  width: 800px;
-  margin: 0 auto;
-
-  .commentbox{
-    width: 100%;
-    height: 300px;
-  }
-
-  .comment-btn{
-    border: none;
-    display: block;
-    margin: 20px auto 0 auto;
-    width: 150px;
-    height: 50px;
-    color: white;
-    border-radius: 10px;
-    background-color: rgb(95, 189, 226);
-  }
-}
-
-.comment-listcontainer{
+.tweetshow-wrpper{
   width: 100vw;
-  margin: 100px 0 100px 30px;
+  box-sizing: border-box;
+  padding: 0 0 100px 0;
+  background: linear-gradient(-90deg, rgba(108,235,241,1) 0%, rgba(207,230,238,1) 100%);
 
-  .comment-listbox{
-    height: 200px;
-    width: 600px;
+
+  .tweetshow-box{
+    width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
     border: solid 1px gray;
-    margin: 0 auto;
+    padding-top: 20px;
 
-    .comment-listheader{
-      box-sizing: border-box;
-      padding: 10px 0 10px 20px;
-      height: 80px;
+    .tweetshow-header{
       width: 100%;
-      border-bottom: solid 1px gray;
+      display: flex;
 
-      .comment-userimage{
+      .tweetshow-userimage{
         width: 60px;
         height: 60px;
         border-radius: 50%;
+        margin: 0 20px 0 20px;
         background-size: cover;
         background-position: center;
-        float: left;
       }
 
-      .comment-username{
-        margin: 0 0 0 20px;
-        font-size: 30px;
-        float: left;
-        line-height: 60px;
+      .tweetshow-username{
+        font-size: 50px;
+        color: gray;
+        text-align: center;
       }
     }
 
-    .comment-box{
-      display: inline-block;
+    .tweetshow-contentimage{
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 0 40px 0;
+    }
+
+    .tweetshow-contenttext{
       width: 100%;
       box-sizing: border-box;
-      padding: 10px;
-      font-size: 30px;
+      padding-left: 20px;
+      font-size: 24px;
+    }
+
+    .likebox{
+      display: flex;
+      padding: 40px 0 0 20px;
+      box-sizing: border-box;
+    
+      .goot-btn{
+        font-size: 20px;
+        color: red;
+      }
+
+      .nogoot-btn{
+        font-size: 20px;
+        color: gray;
+      }
+
+      .likecount{
+        font-size: 20px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  .comment-formbox{
+    width: 800px;
+    margin: 0 auto;
+
+    .commentbox{
+      width: 100%;
+      height: 300px;
+    }
+
+    .comment-btn{
+      border: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 150px;
+      height: 50px;
+      color: white;
+      border-radius: 10px;
+      background-color: rgb(95, 189, 226);
+    }
+  }
+
+  .comment-listcontainer{
+    width: 100vw;
+    // margin: 100px 0 100px 30px;
+    box-sizing: border-box;
+    padding: 100px 0 0 0;
+
+    .comment-listbox{
+      width: 600px;
+      border: solid 1px gray;
+      margin: 0 auto;
+      background-color: white;
+
+      .comment-listheader{
+        box-sizing: border-box;
+        padding: 10px 0 10px 20px;
+        height: 80px;
+        width: 100%;
+        border-bottom: solid 1px gray;
+
+        .comment-userimage{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-size: cover;
+          background-position: center;
+          float: left;
+        }
+
+        .comment-username{
+          margin: 0 0 0 20px;
+          font-size: 30px;
+          float: left;
+          line-height: 60px;
+        }
+      }
+
+      .comment-box{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 30px;
+      }
     }
   }
 }
