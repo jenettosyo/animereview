@@ -1,27 +1,33 @@
-= render "homes/header"
-.tweetshow-box
-  .tweetshow-header
-    = image_tag @tweet.user.image.url, class: "tweetshow-userimage"
-    .tweetshow-username
-      = @tweet.user.name
-  = image_tag @tweet.picture.url, class: "tweetshow-contentimage"
-  .tweetshow-contenttext
-    = @tweet.text
-  - if Like.find_by(user_id: current_user.id, tweet_id: @tweet_id)
-    = link_to "いいね済み", tweet_like_path(@tweet_id), method: :delete
-  - else
-    = link_to "いいね", tweet_likes_path(@tweet_id), method: :post
+.tweetshow-wrpper
+  = render "homes/header"
+  .tweetshow-box
+    .tweetshow-header
+      = image_tag @tweet.user.image.url, class: "tweetshow-userimage"
+      .tweetshow-username
+        = @tweet.user.name
+    = image_tag @tweet.picture.url, class: "tweetshow-contentimage"
+    .tweetshow-contenttext
+      = @tweet.text
+    .likebox
+      - if Like.find_by(user_id: current_user.id, tweet_id: @tweet_id)
+        = link_to tweet_like_path(@tweet_id), method: :delete do
+          %i.fas.fa-heart.goot-btn
+      - else
+        = link_to tweet_likes_path(@tweet_id), method: :post do
+          %i.fas.fa-heart.nogoot-btn
+      .likecount
+        = @like_count
 
-.comment-formbox
-  = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
-    = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
-    = f.submit "送信", class: "comment-btn"
-.comment-listcontainer
-  - @comments.each do|comment|
-    .comment-listbox
-      .comment-listheader
-        = image_tag comment.user.image.url, class: "comment-userimage"
-        .comment-username
-          = comment.user.name
-      .comment-box
-        = comment.comment
+  .comment-formbox
+    = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
+      = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
+      = f.submit "送信", class: "comment-btn"
+  .comment-listcontainer
+    - @comments.each do|comment|
+      .comment-listbox
+        .comment-listheader
+          = image_tag comment.user.image.url, class: "comment-userimage"
+          .comment-username
+            = comment.user.name
+        .comment-box
+          = comment.comment

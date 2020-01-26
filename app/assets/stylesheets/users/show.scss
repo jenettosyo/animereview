@@ -1,9 +1,10 @@
 .show-wrpper{
   width: 100vw;
-  // background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
-  // animation-name: bcg;
-  // animation-duration: 10s;
-  // animation-iteration-count: infinite;
+  padding: 0 0 100px 0;
+  background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
+  animation-name: bcg;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 
 
   @keyframes bcg{
@@ -47,18 +48,17 @@
 
     .show-username{
       font-size: 50px;
-      color: gray;
+      color: white;
       text-align: center;
-      // display: flex;
 
       .edit{
         font-size: 30px;
         text-decoration: none;
-        color: gray;
+        color: white;
         margin: 0 0 0 20px;
       }
       .edit:hover{
-        border-bottom: solid 1px gray;
+        border-bottom: solid 1px white;
       }
     }
   }
