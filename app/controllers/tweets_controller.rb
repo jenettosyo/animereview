@@ -22,6 +22,10 @@ class TweetsController < ApplicationController
 
   def show
     @tweet = Tweet.find_by(id: params[:id])
+    @comment = Comment.new
+    @tweet_id = @tweet.id
+    @comments_tweet = Comment.where(tweet_id: "#{@tweet_id}")
+    @comments = @comments_tweet.all.order("created_at DESC")
   end
 
   def destroy
