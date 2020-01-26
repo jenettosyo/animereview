@@ -6,6 +6,12 @@
     = form_with model: @tweet, method: :post, local: true do |f|
       %p.tweets-text 写真
       = f.file_field :picture, type: 'file', autocomplete: "picture"
+      - if @tweet.errors[:picture].any?
+        .error-message
+          画像を入れてください
       %p.tweets-text 投稿内容
       = f.text_area :text, class: "tweets-area"
+      - if @tweet.errors[:text].any?
+        .error-message-tweet-text
+          文字を入力してください
       = f.submit "投稿", class: "tweets-btn"

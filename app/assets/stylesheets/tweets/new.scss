@@ -1,6 +1,7 @@
 .tweets-wrpper{
   width: 100vw;
-  // height: 1450px;
+  box-sizing: border-box;
+  padding: 0 0 100px 0;
   background: linear-gradient(50deg, rgba(251,102,63,0.9766281512605042) 4%, rgba(28,108,221,0.9402135854341737) 81%);
 
   .tweets-header{
@@ -12,8 +13,8 @@
 
   .tweets-formbox{
     width: 800px;
-    height: 810px;
-    // height: 500px;
+    box-sizing: border-box;
+    padding: 0 0 40px 0;
     background-color: white;
     border-radius: 10px;
     margin: 20px auto 0 auto;
@@ -24,6 +25,11 @@
       padding: 20px 0 20px 20px;
     }
 
+    .error-message{
+      color: red;
+      margin: 10px 0 0 20px;
+    }
+
     .tweets-area{
       height: 500px;
       width: 600px;
@@ -32,11 +38,17 @@
       font-size: 25px;
     }
 
+    .error-message-tweet-text{
+      margin: 20px 0;
+      text-align: center;
+      color: red;
+    }
+
     .tweets-btn{
       display: block;
       width: 200px;
       height: 60px;
-      margin: 20px auto;
+      margin: 20px auto 0 auto;
       border: none;
       border-radius: 10px;
       color: white;
