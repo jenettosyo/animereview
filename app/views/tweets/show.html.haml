@@ -11,3 +11,12 @@
   = form_with model: @comment, url: tweet_comments_path(@tweet.id), method: :post, local: true do |f|
     = f.text_area :comment, class: "commentbox", placeholder: "コメントする", id: "textarea"
     = f.submit "送信", class: "comment-btn"
+.comment-listcontainer
+  - @comments.each do|comment|
+    .comment-listbox
+      .comment-listheader
+        = image_tag comment.user.image.url, class: "comment-userimage"
+        .comment-username
+          = comment.user.name
+      .comment-box
+        = comment.comment
