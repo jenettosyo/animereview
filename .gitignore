@@ -28,3 +28,4 @@
 public/images/*
 public/uploads/*
 app/assets/images/*
+config/secrets.yml
