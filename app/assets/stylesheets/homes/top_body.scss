@@ -1,10 +1,10 @@
 .top-body{
   width: 100%;
   height: 400px;
-  background: linear-gradient(90deg, rgba(212, 21, 21, 0.8), rgba(189, 133, 14, 0.8)), image-url("top6.jpg");
+  // background: linear-gradient(90deg, rgba(212, 21, 21, 0.8), rgba(189, 133, 14, 0.8)), image-url("top6.jpg");
+  background-image: image-url("/default-images/top3.jpg");
   background-size: cover;
-  background-position: top;
-  top: -30px;
+  background-position: center;
 
 
   .toptitle{
