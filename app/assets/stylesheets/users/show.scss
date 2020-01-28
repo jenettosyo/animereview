@@ -1,34 +1,6 @@
 .show-wrpper{
   width: 100vw;
   padding: 0 0 100px 0;
-  background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
-  animation-name: bcg;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-
-
-  @keyframes bcg{
-    0%{
-      background: linear-gradient(50deg, rgba(251,63,97,1) 0%, rgba(107,28,221,0.9738270308123249) 100%);
-    }
-    20%{
-      background: linear-gradient(50deg, rgba(159,63,251,0.9094012605042017) 30%, rgba(28,56,221,0.8869922969187675) 71%);
-    }
-    40%{
-      background: linear-gradient(50deg, rgba(63,81,251,0.9766281512605042) 30%, rgba(28,147,221,0.8869922969187675) 71%);
-    }
-    60%{
-      background: linear-gradient(50deg, rgba(63,166,251,0.9766281512605042) 30%, rgba(28,215,221,0.9402135854341737) 71%);
-    }
-    80%{
-      background: linear-gradient(50deg, rgba(63,251,251,0.9766281512605042) 30%, rgba(28,221,146,0.9402135854341737) 71%);
-    }
-    100%{
-      background: linear-gradient(50deg, rgba(119,251,63,0.9766281512605042) 30%, rgba(221,220,28,0.9402135854341737) 71%);
-    }
-  }
-
-
 
   .show-header{
     height: 350px;
@@ -49,17 +21,17 @@
 
     .show-username{
       font-size: 50px;
-      color: white;
+      color: gray;
       text-align: center;
 
       .edit{
         font-size: 30px;
         text-decoration: none;
-        color: white;
+        color: gray;
         margin: 0 0 0 20px;
       }
       .edit:hover{
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px gray;
       }
     }
   }
