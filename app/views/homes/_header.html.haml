@@ -4,11 +4,11 @@
   .header-right
     - if user_signed_in?
       .header-right-triangle
-      = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
-      .header-right-triangle
       = link_to "list", tweets_path, class: "header-list top-hover"
       .header-right-triangle
       = link_to "投稿", new_tweet_path, class: "header-list top-hover"
+      .header-right-triangle
+      = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
       = image_tag current_user.image.url, class: "hesder-userimage" 
       = link_to current_user.name, user_path(current_user.id), class: "header-username"
     -else
