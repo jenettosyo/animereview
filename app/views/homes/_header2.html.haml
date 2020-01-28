@@ -1,0 +1,19 @@
+.header2
+  .header2-left
+    = link_to "Anitwe", root_path, class: "top"
+  .header2-right
+    - if user_signed_in?
+      .header2-right-triangle
+      = link_to "list", tweets_path, class: "header2-list top-hover"
+      .header2-right-triangle
+      = link_to "投稿", new_tweet_path, class: "header2-list top-hover"
+      .header2-right-triangle
+      = link_to "logout", destroy_user_session_path, method: :delete, class: "header2-list top-hover"
+      = image_tag current_user.image.url, class: "hesder2-userimage" 
+      = link_to current_user.name, user_path(current_user.id), class: "header2-username"
+    -else
+      .header2-right-triangle
+      = link_to "sign_up", new_user_registration_path, class: "header2-list top-hover"
+      .header2-right-triangle
+      = link_to "login", new_user_session_path, class: "header2-list top-hover"
+

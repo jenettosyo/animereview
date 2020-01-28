@@ -28,6 +28,7 @@
       width: 0;
       height: 0;
       margin-top: 20px;
+      position: relative;
       border-width: 10px;
       border-style: solid;
       border-color: transparent transparent transparent white;
@@ -53,6 +54,7 @@
       background-size: cover;
       position: relative;
       background-position: center;
+      background-color: gray;
     }
 
     .header-username{
@@ -86,10 +88,6 @@
   }
 
   .top-hover:hover{
-    // border-bottom: solid 1px white;
-    display: block;
-    background-color: red;
-    border-radius: 5px;
-    animation-play-state: paused;
+    border-bottom: solid 1px white;
   }
 }

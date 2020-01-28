@@ -1,0 +1,70 @@
+.header2{
+  width: 100vw;
+  height: 100px;
+  padding: 20px 150px;
+  box-sizing: border-box;
+  z-index: 1;
+
+  .header2-left{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 60px;
+    transition: 1s;
+
+    .top{
+      text-decoration: none;
+      color: gray;
+    }
+  }
+
+  .header2-right{
+    font-size: 24px;
+    float: right;
+    display: flex;
+    
+
+    .header2-right-triangle{
+      width: 0;
+      height: 0;
+      margin-top: 20px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent transparent gray;
+    }
+    
+
+    .header2-list{
+      float: left;
+      text-decoration: none;
+      list-style: none;
+      color: gray;
+      line-height: 50px;
+      transition: 1s;
+      margin: 4px 20px 0 0;
+    }
+
+    .hesder2-userimage{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 5px 0 0;
+      background-color: gray;
+      background-size: cover;
+      position: relative;
+      background-position: center;
+    }
+
+    .header2-username{
+      float: left;
+      text-decoration: none;
+      list-style: none;
+      color: gray;
+      line-height: 50px;
+
+    }
+  }
+
+  .top-hover:hover{
+    border-bottom: solid 1px gray;
+  }
+}
