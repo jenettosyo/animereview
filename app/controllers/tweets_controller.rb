@@ -29,6 +29,19 @@ class TweetsController < ApplicationController
     @like_count = Like.where(tweet_id: @tweet.id).count
   end
 
+  def edit
+    @tweet = Tweet.find_by(id: params[:id])
+  end
+
+  def update
+    @tweet = Tweet.find_by(id: params[:id])
+    if @tweet.update(tweet_params)
+      redirect_to user_path(current_user.id)
+    else
+      render action: "edit"
+    end
+  end
+
   def destroy
     tweet = Tweet.find_by(id: params[:id])
     tweet.destroy
