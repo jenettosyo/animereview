@@ -3,6 +3,29 @@
   padding: 0 0 100px 0;
   background: linear-gradient(-90deg, rgba(108,235,241,1) 0%, rgba(207,230,238,1) 100%);
 
+  .search-input{
+    width: 400px;
+    height: 40px;
+    padding: 0 0 0 20px;
+    top: 30px;
+    left: 300px;
+    display: block;
+    position: absolute;
+  }
+
+  .searchbtn{
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(67, 123, 196);
+    color: white;
+    top: 30px;
+    left: 750px;
+    display: block;
+    position: absolute;
+  }
+
   .index-contentbox{
     width: 800px;
     margin: 0 auto;
