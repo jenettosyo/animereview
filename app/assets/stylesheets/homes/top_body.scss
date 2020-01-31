@@ -1,7 +1,7 @@
 .top-body{
   width: 100%;
   height: 400px;
-  background-image: image-url("/default-images/top3.jpg");
+  background-image: image-url("/default-images/3c2448e7829710ba7dc0f3743f101219.png");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     height: 400px;
-    background: linear-gradient(90deg, rgba(212, 21, 21, 0.8), rgba(189, 133, 14, 0.8));
+    background: linear-gradient(249deg, rgba(38,43,43,0.6909138655462185) 34%, rgba(31,32,32,0.8057598039215687) 100%);
     z-index: 0;
   }
 
@@ -45,7 +45,9 @@
   z-index: -2;
   width: 100%;
   height: 400px;
-  background-image: image-url("/default-images/top2.jpeg");
+  background-image: image-url("/default-images/0c017346-169181.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .top-body2::after{
@@ -60,7 +62,7 @@
   z-index: -2;
   width: 100%;
   height: 400px;
-  background: radial-gradient(rgba(0, 17, 255, 0.548),rgba(21, 113, 175, 0.356));
+  background: linear-gradient(249deg, rgba(38,43,43,0.09987745098039214) 59%, rgba(31,32,32,1) 100%);
 }
 
 .top-content{
