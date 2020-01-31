@@ -5,4 +5,9 @@ class Tweet < ApplicationRecord
   mount_uploader :picture, ImageUploader
   validates :text, presence: true
   validates :picture, presence: true
+
+  def self.search(search)
+    return Tweet.all unless search
+    Tweet.where('text LIKE(?)', "%#{search}%")
+  end
 end
