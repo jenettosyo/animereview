@@ -6,7 +6,7 @@
       .header-right-triangle
       = link_to "list", tweets_path, class: "header-list top-hover"
       .header-right-triangle
-      = link_to "投稿", new_tweet_path, class: "header-list top-hover"
+      = link_to "post", new_tweet_path, class: "header-list top-hover"
       .header-right-triangle
       = link_to "logout", destroy_user_session_path, method: :delete, class: "header-list top-hover"
       = image_tag current_user.image.url, class: "hesder-userimage" 
