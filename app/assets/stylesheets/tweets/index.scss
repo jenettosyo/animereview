@@ -104,10 +104,10 @@
     background: linear-gradient(-90deg, rgba(108,235,241,1) 0%, rgba(207,230,238,1) 100%);
   
     .search-input{
-      width: 300px;
+      width: 200px;
       height: 20px;
       padding: 0 0 0 20px;
-      top: 50px;
+      top: 120px;
       left: 10px;
       display: block;
       margin: 0 auto;
@@ -116,16 +116,14 @@
   
     .searchbtn{
       border: none;
-      height: 40px;
-      width: 150px;
-      border-radius: 10px;
+      height: 20px;
+      width: 70px;
+      border-radius: 5px;
       background-color: rgb(67, 123, 196);
       color: white;
-      top: 30px;
-      left: 750px;
-      display: none;
-      // position: absolute;
-
+      top: 120px;
+      left: 250px;
+      display: block;
     }
   
     .index-contentbox{
