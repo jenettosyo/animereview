@@ -35,16 +35,15 @@
 
     .tweetshow-contentimage{
       width: 100%;
-      height: 500px;
       background-size: cover;
       background-position: center;
-      margin: 20px 0 40px 0;
+      margin: 20px 0;
     }
 
     .tweetshow-contenttext{
       width: 100%;
       box-sizing: border-box;
-      padding-left: 20px;
+      padding: 0 10px;
       font-size: 24px;
     }
 
@@ -93,14 +92,13 @@
 
   .comment-listcontainer{
     width: 100vw;
-    // margin: 100px 0 100px 30px;
     box-sizing: border-box;
     padding: 100px 0 0 0;
 
     .comment-listbox{
       width: 600px;
       border: solid 1px gray;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
       background-color: white;
 
       .comment-listheader{
@@ -133,6 +131,155 @@
         box-sizing: border-box;
         padding: 10px;
         font-size: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+@media (max-width: 600px){
+
+  .tweetshow-wrpper{
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0 0 100px 0;
+    background: linear-gradient(-90deg, rgba(108,235,241,1) 0%, rgba(207,230,238,1) 100%);
+  
+  
+    .tweetshow-box{
+      margin: 30px auto;
+      width: 373px;
+      border: solid 1px gray;
+      background-color: #fff;
+  
+      .tweetshow-header{
+        width: 100%;
+        display: flex;
+  
+        .tweetshow-userimage{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin: 0 20px 0 20px;
+          background-size: cover;
+          background-position: center;
+          background-color: gray;
+        }
+  
+        .tweetshow-username{
+          font-size: 30px;
+          color: gray;
+          text-align: center;
+          line-height: 60px;
+        }
+      }
+  
+      .tweetshow-contentimage{
+        margin: 20px 0;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+      }
+  
+      .tweetshow-contenttext{
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+  
+      .likebox{
+        display: flex;
+        padding: 40px 0 0 20px;
+        box-sizing: border-box;
+      
+        .goot-btn{
+          font-size: 20px;
+          color: red;
+        }
+  
+        .nogoot-btn{
+          font-size: 20px;
+          color: gray;
+        }
+  
+        .likecount{
+          font-size: 20px;
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+  
+    .comment-formbox{
+      width: 373px;
+      margin: 0 auto;
+  
+      .commentbox{
+        width: 372px;
+        height: 300px;
+        border: solid 1px gray;
+      }
+  
+      .comment-btn{
+        border: none;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 150px;
+        height: 50px;
+        color: white;
+        border-radius: 10px;
+        background-color: rgb(95, 189, 226);
+      }
+    }
+  
+    .comment-listcontainer{
+      width: 372px;
+      box-sizing: border-box;
+      padding: 100px 0 0 0;
+  
+      .comment-listbox{
+        width: 372px;
+        border: solid 1px gray;
+        margin: 0 auto 20px auto;
+        background-color: white;
+  
+        .comment-listheader{
+          box-sizing: border-box;
+          padding: 10px 0 10px 20px;
+          height: 80px;
+          width: 100%;
+          border-bottom: solid 1px gray;
+  
+          .comment-userimage{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            float: left;
+          }
+  
+          .comment-username{
+            margin: 0 0 0 20px;
+            font-size: 30px;
+            float: left;
+            line-height: 60px;
+          }
+        }
+  
+        .comment-box{
+          display: inline-block;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 10px;
+          font-size: 30px;
+        }
       }
     }
   }

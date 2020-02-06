@@ -96,3 +96,113 @@
     }
   }
 }
+
+@media (max-width: 600px){
+
+  .show-wrpper{
+    width: 100vw;
+    padding: 0 0 100px 0;
+    overflow: hidden;
+    flex-direction: column;
+  
+    .show-header{
+      height: 350px;
+      width: 100vw;
+      padding-top: 40px;
+      box-sizing: border-box;
+    
+      .image{
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        background-color: gray;
+      }
+  
+      .show-username{
+        font-size: 50px;
+        color: gray;
+        text-align: center;
+  
+        .edit{
+          font-size: 30px;
+          text-decoration: none;
+          color: gray;
+          margin: 0 0 0 20px;
+        }
+        .edit:hover{
+          border-bottom: solid 1px gray;
+        }
+      }
+    }
+  
+    .index-contentbox{
+      width: 371px;
+      margin: 0 auto;
+      background-color: #fff;
+  
+      .index-contentwrpper{
+        width: 100%;
+        border-bottom: solid 1px gray;
+        
+  
+        .index-contentheader{
+          height: 60px;
+          padding: 20px;
+  
+          .hesder-userimage{
+            float: left;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 5px 0 0;
+            background-size: cover;
+            background-position: center;
+            background-color: gray;
+          }
+      
+          .header-username{
+            float: left;
+            text-decoration: none;
+            list-style: none;
+            font-size: 30px;
+            color: black;
+            line-height: 60px;
+            margin: 0 0 0 10px;
+          }
+  
+          .destroy-btn{
+            float: right;
+            text-decoration: none;
+            color: gray;
+            font-size: 20px;
+            margin: 0 0 0 20px;
+          }
+  
+          .destroy-btn:hover{
+            border-bottom: solid 1px gray;
+          }
+        }
+  
+        .index-contentimage{
+          width: 100%;
+          height: 173px;
+          background-size: cover;
+          background-position: center;
+          object-fit: cover;
+        }
+  
+        .index-contenttext{
+          display: inline-block;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 20px 10px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      }
+    }
+  }
+}
