@@ -13,6 +13,6 @@
       = link_to current_user.name, user_path(current_user.id), class: "header-username"
     -else
       .header-right-triangle
-      = link_to "sign_up", new_user_registration_path, class: "header-list top-hover"
+      = link_to "sign_up", new_user_registration_path, class: "header-list top-hover phone-header"
       .header-right-triangle
-      = link_to "login", new_user_session_path, class: "header-list top-hover"
+      = link_to "login", new_user_session_path, class: "header-list top-hover phone-header"
